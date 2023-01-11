@@ -14,9 +14,14 @@ Open your local browser and verify the testrestapi is working by accessing:
 ### Products API Routes 
   
 All Products => `http://localhost:8000/products/` [ Get Request ]
+
 Single Product =>  `http://localhost:8000/products/{product_id}`   [ Get Request ]
+
 Delete Product =>  `http://localhost:8000/products/{product_id}`   [ Delete Request ]
+
 Create Product => `http://localhost:8000/products/` [ Post Request ]
+
+
   - Json body for creating product
 
   {
@@ -41,9 +46,13 @@ Update Product =>  `http://localhost:8000/products/{product_id}`   [ PUT Request
 ### Category API Routes 
   
 All Categories => `http://localhost:8000/categories/` [ Get Request ]
+
 Single Category =>  `http://localhost:8000/categories/{category_id}`   [ Get Request ]
+
 Delete Category =>  `http://localhost:8000/categories/{category_id}`   [ Delete Request ]
+
 Create Category => `http://localhost:8000/categories/` [ Post Request ]
+
   - Json body for creating Category
   
 
@@ -53,6 +62,7 @@ Create Category => `http://localhost:8000/categories/` [ Post Request ]
 
   
 Update Product =>  `http://localhost:8000/products/{category_id}`   [ PUT Request ]
+
   - Json body for Update Category
   
 
