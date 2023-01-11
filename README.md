@@ -25,7 +25,7 @@ Single Product =>  `http://localhost:8000/products/{product_id}`   [ Get Request
 Delete Product =>  `http://localhost:8000/products/{product_id}`   [ Delete Request ]
 Create Product => `http://localhost:8000/products/` [ Post Request ]
   - Json body for creating product
-  ```
+
   {
     "name": "product name",
     "description": "Product One Description",
@@ -36,7 +36,7 @@ Create Product => `http://localhost:8000/products/` [ Post Request ]
 Update Product =>  `http://localhost:8000/products/{product_id}`   [ PUT Request ]
   - Json body for Update product
   
-  ```
+
   {
     "name": "product name",
     "description": "Product One Description",
@@ -53,7 +53,7 @@ Delete Category =>  `http://localhost:8000/categories/{category_id}`   [ Delete 
 Create Category => `http://localhost:8000/categories/` [ Post Request ]
   - Json body for creating Category
   
-  ```
+
   {
     "name": "product name",
   }
@@ -62,7 +62,7 @@ Create Category => `http://localhost:8000/categories/` [ Post Request ]
 Update Product =>  `http://localhost:8000/products/{category_id}`   [ PUT Request ]
   - Json body for Update Category
   
-  ```
+
   {
     "name": "product name",
   }
