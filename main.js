@@ -3,10 +3,24 @@ const express = require("express");
 var bodyParser = require('body-parser')
 const mongoose = require('mongoose');
 const https = require('https');
+const rateLimit = require("express-rate-limit");
 const http = require('http');
 mongoose.set('strictQuery', false);
 const app = express();
 const port = process.env.PORT || "8000";
+
+app.use(
+  rateLimit({
+    windowMs: 12 * 60 * 60 * 1000, // 12 hour duration in milliseconds
+    max: 100,
+    message: "You exceeded 100 requests in 12 hour limit!",
+    headers: true,
+  })
+);
+
+
+
+
 const { getAllProducts } = require('./controllers/productController')
 const cors = require('cors');
 app.use(cors({
