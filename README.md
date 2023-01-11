@@ -1,10 +1,6 @@
 # Test-node-api  
 A sample node js api for Product with their related category.     
 
-
-This sample express app, has https enabled already.    
-
-
 ## Clone the repository, install node packages  and verify routes locally
 
 git clone https://github.com/amitsingh17051/testrestapi.git
