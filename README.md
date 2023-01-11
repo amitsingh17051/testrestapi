@@ -7,7 +7,7 @@ git clone https://github.com/amitsingh17051/testrestapi.git
 cd testrestapi
 npm install
 npm start
-```
+
 
 Open your local browser and verify the testrestapi is working by accessing:   
 
