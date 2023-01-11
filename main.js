@@ -2,6 +2,8 @@ require('dotenv').config()
 const express = require("express");
 var bodyParser = require('body-parser')
 const mongoose = require('mongoose');
+const https = require('https');
+const http = require('http');
 mongoose.set('strictQuery', false);
 const app = express();
 const port = process.env.PORT || "8000";
@@ -27,10 +29,29 @@ app.use('/products',require('./router/products'));
 
 
 // views
-app.get('/', (req, res) => {
-    res.render('index', { title: 'My EJS Page', productData: getAllProducts });
-});
+app.get('/', async (req, res) => {
+    // try {
+    //   const data = await getAllProductsData();
+      
+    // } catch(err) {
+    //   console.log(err);
+    //   res.status(500).send("Internal Server Error");
+    // }
 
+    http.get(`http://localhost:${port}/products`, (resp) => {
+        let data = '';
+
+        // A chunk of data has been received.
+        resp.on('data', (chunk) => {
+          data += chunk;
+        });
+
+        console.log(resp)
+
+    });
+
+    res.render('index')
+})
 
 app.listen(port, () => {
     console.log(`Listening to requests on http://localhost:${port}`);

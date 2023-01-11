@@ -1,3 +1,5 @@
+const Product = require('../models/productSchema');
+
 const createProductWithCategory = async (productData, categoryIds) => {
     try {
         productData.categories = categoryIds;
@@ -20,11 +22,11 @@ const updateProductWithCategory = async (productData, categoryIds, id) => {
 
 
 const getAllProducts = async (req, res) => {
+    const products = await Product.find();
     try {
-        const products = await Product.find();
-        res.status(302).send({products});
+        res.status(200).send({products});
     } catch (error) {
-        res.status(400).json({msg: "No Idea with this is!"});
+        res.status(500).json({msg: "No Product founds!"});
     }
 }
 
