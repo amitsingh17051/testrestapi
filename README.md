@@ -1,9 +1,7 @@
 # Test-node-api  
 A sample node js api for Product with their related category.     
 
-## Steps
 
-`   
 This sample express app, has https enabled already.    
 
 
