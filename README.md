@@ -9,7 +9,6 @@ This sample express app, has https enabled already.
 
 ## Clone the repository, install node packages  and verify routes locally
 
-//on local
 git clone https://github.com/amitsingh17051/testrestapi.git
 cd testrestapi
 npm install
@@ -32,7 +31,7 @@ Create Product => `http://localhost:8000/products/` [ Post Request ]
     "price": "42",
     "categories": ["{category_id}"]
   }
-  ```
+
 Update Product =>  `http://localhost:8000/products/{product_id}`   [ PUT Request ]
   - Json body for Update product
   
@@ -43,7 +42,7 @@ Update Product =>  `http://localhost:8000/products/{product_id}`   [ PUT Request
     "price": "42",
     "categories": ["{category_id}"]
   }
-  ```
+
 
 ### Category API Routes 
   
@@ -57,7 +56,7 @@ Create Category => `http://localhost:8000/categories/` [ Post Request ]
   {
     "name": "product name",
   }
-  ```
+
   
 Update Product =>  `http://localhost:8000/products/{category_id}`   [ PUT Request ]
   - Json body for Update Category
@@ -66,7 +65,7 @@ Update Product =>  `http://localhost:8000/products/{category_id}`   [ PUT Reques
   {
     "name": "product name",
   }
-  ```
+
   
 
 
