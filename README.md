@@ -35,6 +35,7 @@ Create Product => `http://localhost:8000/products/` [ Post Request ]
   ```
 Update Product =>  `http://localhost:8000/products/{product_id}`   [ PUT Request ]
   - Json body for Update product
+  
   ```
   {
     "name": "product name",
@@ -51,17 +52,21 @@ Single Category =>  `http://localhost:8000/categories/{category_id}`   [ Get Req
 Delete Category =>  `http://localhost:8000/categories/{category_id}`   [ Delete Request ]
 Create Category => `http://localhost:8000/categories/` [ Post Request ]
   - Json body for creating Category
+  
   ```
   {
     "name": "product name",
   }
   ```
+  
 Update Product =>  `http://localhost:8000/products/{category_id}`   [ PUT Request ]
   - Json body for Update Category
+  
   ```
   {
     "name": "product name",
   }
   ```
+  
 
 
